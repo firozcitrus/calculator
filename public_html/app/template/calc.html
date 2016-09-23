@@ -1,0 +1,49 @@
+<ion-view title={{pageTitle}}>
+    <!-- <ion-content> -->
+    <div class="row">
+        <h1 class="heading">Enter Two numbers</h1>
+
+        <div class="time_duration_m center-block">
+            <div class="col">
+                <input type="text" ng-model="numberone" placeholder="First number"/>
+                <label ng-model="operator" style="color: white">{{operate}}</label>
+                <input type="text" ng-model="numbertwo" placeholder="Second number"/>
+            </div>
+            <div class="col">
+                <label style="color: white">Answer</label>
+                <label style="color: white">{{answer}}</label>
+            </div>
+            <div class="col">
+                <button type="button" ng-click="addnumber('1')" >1</button>
+                <button type="button" ng-click="addnumber('2')" >2</button>
+                <button type="button" ng-click="addnumber('3')" >3</button>
+                <button type="button" ng-click="operator('add')" >+</button>
+
+            </div>
+            <div class="col">
+                <button type="button" ng-click="addnumber('4')" >4</button>
+                <button type="button" ng-click="addnumber('5')" >5</button>
+                <button type="button" ng-click="addnumber('6')" >6</button>
+                <button type="button" ng-click="operator('sub')" >-</button>
+
+            </div>
+            <div class="col">
+                <button type="button" ng-click="addnumber('7')" >7</button>
+                <button type="button" ng-click="addnumber('8')">8</button>
+                <button type="button" ng-click="addnumber('9')" >9</button>
+                <button type="button" ng-click="operator('multi')">*</button>                
+            </div>
+            <div class="col">
+                <button type="button" class="btn" > </button>
+                <button type="button" ng-click="addnumber('0')" >0</button>
+                <button type="button" ng-click="operator('div')" >*</button>
+                <button type="button" ng-click="calculate()" >=</button>
+
+            </div>
+
+            <div class=" clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <!-- </ion-content> -->
+</ion-view>
